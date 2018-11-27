@@ -61,6 +61,7 @@ private:
     Mat right_image;
     Ptr<StereoSGBM> sgbm = StereoSGBM::create(0, 144, 3, 216, 864, 1, 63, 10, 100, 32);
     void compute_depth_map();
+    void compute_disparity_map();
     void set_SADWindowSize();
     void set_num_of_disparity_slider_to_multiple_16(int position);
 };
